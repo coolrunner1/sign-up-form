@@ -90,7 +90,7 @@ body {
 
 
 #bottom-container {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -101,8 +101,9 @@ body {
   border: none;
   background-color: #596d48;
   color: #ffffff;
-  width: 20vh;
-  padding: 1vh;
+  width: 21vh;
+  padding: 1.5vh;
+  box-shadow: 0.3vh 0.4vh 1vh black;
 }
 
 #submit:hover {
@@ -166,14 +167,35 @@ input, select, textarea, button {
   justify-content: space-between;
 }
 
-input[type='number']{
-  width: 100%;
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+  input[type='number']:not(*:root) {
+    width: 100%;
+  }
+  #number-label{
+    width: 10vw;
+  }
+}
+
+@-moz-document url-prefix() {
+  input[type='number']:not(*:root) {
+    width: auto;
+  }
+  #number-label{
+    width: auto;
+  }
 }
 
 a {
   color:#596d48;
 }
 
-#number-label {
-  width: 22vh
+#dropdown{
+  width: 35vh;
+  height: 5vh;
+}
+
+#bottom-text {
+  margin-top: 1.5vw;
+  margin-left: 2vh;
 }

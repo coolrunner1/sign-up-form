@@ -25,7 +25,9 @@
           <div id="title">This is not a real online service! Sign up now to get started.</div>
           <p id="description">You <i>know</i> you want to!</p>
         </div>
-        <form id="survey-form">
+        <form>
+        <div id="survey-form">
+          
           <div class="rowBut">
             <label id="name-label" for="name">FIRST NAME <input id="first-name" type="text" placeholder="Enter your first name" required /></label>
             <label id="name-label" for="name">LAST NAME <input id="last-name" type="text" placeholder="Enter your last name" required /></label>
@@ -35,8 +37,8 @@
             <label id="number-label"  for="number">AGE <input id="number" type="number" min=0 max=150 placeholder="Enter your age" required /></label>
           </div>
           <div class="rowBut">
-            <label id="password-label"  for="password">PASSWORD <input id="password" type="password" placeholder="Enter your password" required /></label>
-            <label id="password-confirm-label"  for="password">CONFIRM PASSWORD <input id="password" type="password" placeholder="Confirm password" required /></label>
+            <label id="password-label"  for="password1">PASSWORD <input id="password1" type="password" placeholder="Enter your password" required /></label>
+            <label id="password-confirm-label"  for="password2">CONFIRM PASSWORD <input id="password2" type="password" placeholder="Confirm password" required /></label>
           </div>
           <div class="rowBut" id="bottom-form">
             <label for="dropdown">
@@ -45,18 +47,20 @@
               </select>
             </label>
             <div id="myboxes">
-              <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree"/></label>
+              <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree" required/></label>
               <label class="check">I don't agree with terms and conditions <input type="radio" class="radios" name="conditions" value="disagree"/></label>
             <label class="check">I liked this webpage 
               <input type="checkbox" value="likes" class="checkboxes"/>
             </label>
+            
           </div>
           </div>
-        </form>
-        <div id="bottom-container">
-          <button id="submit">Create Account</button>
-          <div id="bottom-text">Already have an account? <a href="">Log in</a></div>
-        </div>
+      </div>
+      <div id="bottom-container">
+        <button id="submit" onclick="checkPassword(form)">Create Account</button>
+        <div id="bottom-text">Already have an account? <a href="">Log in</a></div>
+      </div>
+    </form>
     </div>
   </div>
   </body>
