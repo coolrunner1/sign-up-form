@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
     <title>
       Survey Form
     </title>
@@ -13,6 +17,7 @@
         <div id="odin">
           <div id="odin-logo"></div>
         </div>
+        <div id="author">Photo by <u>Halie West</u> on <u>Unsplash</u></div>
       </div>
       <div id="right-container">
         <div id="top-container">
@@ -26,27 +31,20 @@
           <label for="dropdown">
             Gender
             <select id="dropdown">
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
             </select>
           </label>
           <div id="myboxes">
             <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree"/></label>
             <label class="check">I don't agree with terms and conditions <input type="radio" class="radios" name="conditions" value="disagree"/></label>
-          <label class="check">I liked this survey 
+          <label class="check">I liked this webpage 
             <input type="checkbox" value="likes" class="checkboxes"/>
           </label>
-          <label class="check">I want to participate in surveys like this one in the future
-            <input type="checkbox" value="future" class="checkboxes"/>
-          </label>
           </div>
-          <label>
-            Wishes
-            <textarea></textarea>
-          </label>
-          <button id="submit">Submit</button>
         </form>
+        <div id="bottom-container">
+          <button id="submit">Submit</button>
+          <div id="bottom-text">Already have an account? <a href="">Log in</a></div>
+        </div>
     </div>
   </div>
   </body>
