@@ -29,6 +29,10 @@ body {
 }
 
 #survey-form {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  border-color: blue;
   font-family: arial;
   font-size: 20px;
   font-style: bold;
