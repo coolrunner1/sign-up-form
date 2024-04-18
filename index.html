@@ -16,6 +16,7 @@
       <div id="myimg">
         <div id="odin">
           <div id="odin-logo"></div>
+          <div id="odin-text">ODIN</div>
         </div>
         <div id="author">Photo by <u>Halie West</u> on <u>Unsplash</u></div>
       </div>
@@ -25,24 +26,35 @@
           <p id="description">You <i>know</i> you want to!</p>
         </div>
         <form id="survey-form">
-          <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
-          <label id="email-label"  for="email">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
-          <label id="number-label"  for="number">Age <input id="number" type="number" min=0 max=150 placeholder="Enter your age" required /></label>
-          <label for="dropdown">
-            Gender
-            <select id="dropdown">
-            </select>
-          </label>
-          <div id="myboxes">
-            <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree"/></label>
-            <label class="check">I don't agree with terms and conditions <input type="radio" class="radios" name="conditions" value="disagree"/></label>
-          <label class="check">I liked this webpage 
-            <input type="checkbox" value="likes" class="checkboxes"/>
-          </label>
+          <div class="rowBut">
+            <label id="name-label" for="name">FIRST NAME <input id="first-name" type="text" placeholder="Enter your first name" required /></label>
+            <label id="name-label" for="name">LAST NAME <input id="last-name" type="text" placeholder="Enter your last name" required /></label>
+          </div>
+          <div class="rowBut">
+            <label id="email-label"  for="email">EMAIL <input id="email" type="email" placeholder="Enter your email" required /></label>
+            <label id="number-label"  for="number">AGE <input id="number" type="number" min=0 max=150 placeholder="Enter your age" required /></label>
+          </div>
+          <div class="rowBut">
+            <label id="password-label"  for="password">PASSWORD <input id="password" type="password" placeholder="Enter your password" required /></label>
+            <label id="password-confirm-label"  for="password">CONFIRM PASSWORD <input id="password" type="password" placeholder="Confirm password" required /></label>
+          </div>
+          <div class="rowBut" id="bottom-form">
+            <label for="dropdown">
+              Gender
+              <select id="dropdown">
+              </select>
+            </label>
+            <div id="myboxes">
+              <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree"/></label>
+              <label class="check">I don't agree with terms and conditions <input type="radio" class="radios" name="conditions" value="disagree"/></label>
+            <label class="check">I liked this webpage 
+              <input type="checkbox" value="likes" class="checkboxes"/>
+            </label>
+          </div>
           </div>
         </form>
         <div id="bottom-container">
-          <button id="submit">Submit</button>
+          <button id="submit">Create Account</button>
           <div id="bottom-text">Already have an account? <a href="">Log in</a></div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: norse-bold;
-  src: url("../fonts/Norse-Bold.otf");
+  src: url("./fonts/Norse-Bold.otf");
 }
 
 body {
@@ -8,7 +8,7 @@ body {
   padding: 0;
   color: #2e2f2f;
   font-family: norse-bold, arial, bold;
-  font-size: 2rem;
+  font-size: 3.0vh;
 }
 
 #title {
@@ -39,12 +39,10 @@ body {
 }
 
 #author {
-  top: 100px;
   opacity: 100%;
   color: #ffffff;
   text-align: center;
-  font-size: 1rem;
-  height: 50vh;
+  font-size: 2vh;
   margin-top: 60vh;
 }
 
@@ -56,12 +54,12 @@ body {
 #survey-form {
   background-color: #ffffff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: arial;
-  font-size: calc(20px * 1vh);
+  font-size: 1.5vh;
   font-style: bold;
   color: #2e2f2f;
-  box-shadow: 10px 4px 5px black;
+  box-shadow: 1.2vh 1.3vh 1.1vh black;
 }
 
 #odin {
@@ -70,8 +68,7 @@ body {
   justify-content: center;
   padding: 5vh;
   height: 15vh;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.643);
   gap: 0;
 }
 
@@ -82,8 +79,15 @@ body {
   margin: 0;
   width: 15vh;
   height: 15vh;
-  opacity: 100%;
 }
+
+#odin-text {
+  margin: auto 0;
+  font-family: norse-bold, arial, bold;
+  font-size: 10vh;
+  color: white;
+}
+
 
 #bottom-container {
   margin-top: 10vh;
@@ -97,6 +101,8 @@ body {
   border: none;
   background-color: #596d48;
   color: #ffffff;
+  width: 20vh;
+  padding: 1vh;
 }
 
 #submit:hover {
@@ -113,41 +119,61 @@ body {
 
 label {
   display: block;
-  margin: 10px;
+  margin: 1vh;
   text-align: center;
 }
 
 input, select, textarea, button {
   display: block;
-  padding: 15px;
-  width: 100%;
-  max-width: 250px;
+  padding: 1vh 5vw;
+  padding-left: 1vw;
+  width: auto;
   background-color: #ffffff90;
-  border-style: dotted;
-  border-radius: 10px;
+  border-style: solid;
+  border-radius: 0.5vh;
+  border-color: #e5e7eb;
+  border-width: 0.5vh;
   margin: auto;
   font-family: arial;
-  font-size: 15px;
-}
-
-button {
-  max-width: 130px;
-  padding: 10px;
+  font-size: 2vh;
 }
 
 .radios, .checkboxes {
   display: inline;
-  margin: auto, 10px;
-  width: auto;
+  margin: auto, 1vw;
+  width: 1.5vw;
+  height: 1.5vh;
+  border: 1vh;
 }
 
 .check {
   text-align: right;
-  font-size: 15px; 
-  border-radius: 5px;
+  font-size: 1,5vh; 
+  border-radius: 1vh;
 }
 
 #myboxes {
-  margin: auto;
-  max-width: 300px;
+  margin: 0;
+  
+}
+
+.rowBut {
+  display: flex;
+  flex-direction: row;
+}
+
+#bottom-form{
+  justify-content: space-between;
+}
+
+input[type='number']{
+  width: 100%;
+}
+
+a {
+  color:#596d48;
+}
+
+#number-label {
+  width: 22vh
 }
