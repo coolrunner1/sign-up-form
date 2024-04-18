@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="myimg"></div>
+      <div id="right-container">
+        <h1 id="title">This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to get started.</h1>
+        <p id="description">Thank you for taking the time to participate in this survey!</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label"  for="email">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label"  for="number">Age <input id="number" type="number" min=0 max=150 placeholder="Enter your age" required /></label>
+          <label for="dropdown">
+            Gender
+            <select id="dropdown">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <div id="myboxes">
+            <label class="check">I agree with terms and conditions <input type="radio" name="conditions"  class="radios" value="agree"/></label>
+            <label class="check">I don't agree with terms and conditions <input type="radio" class="radios" name="conditions" value="disagree"/></label>
+          <label class="check">I liked this survey 
+            <input type="checkbox" value="likes" class="checkboxes"/>
+          </label>
+          <label class="check">I want to participate in surveys like this one in the future
+            <input type="checkbox" value="future" class="checkboxes"/>
+          </label>
+          </div>
+          <label>
+            Wishes
+            <textarea></textarea>
+          </label>
+          <button id="submit">Submit</button>
+        </form>
+    </div>
+  </div>
+  </body>
+</html>
